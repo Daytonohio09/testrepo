@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <title>Solar System</title>
+                         <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+                         rel = "stylesheet">
+                      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+                      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+                      
+                      <style>
+                         .ui-widget-header,.ui-state-default, ui-button {
+                            background: black;
+                            border: 1px solid #b9cd6d;
+                            color: #FFFFFF;
+                            font-weight: bold;
+                            font-size: 30pxpx;
+                         }
+
+                         table,th,td {
+                border: 2px solid black;
+                font-family: Times;
+            }
+                         
+                         div {
+                           font-size: 20px;
+                           font-family: Times;
+                         }
+                         
+                         body {
+                  background-color: black;
+                }
+                
+                form {
+                  font-family: sans-serif;
+                  font-size: 50px;
+                  color: #EEEEEE;
+                }
+                
+                h2 {
+                  font-family: sans-serif;
+                  font-size: 100px;
+                  color: #EEEEEE;
+                }
+                
+                input {
+                  font-family: sans-serif;
+                  font-size: 42.5px;
+                  height: 50px;
+                  width: 200px;
+                  color: #EEEEEE;
+                  background-color: black;
+                }
+                
+                button {
+                  color: black;
+                  background-color: Wheat;
+                  border: 0px;
+                  font-family: Times;
+                  font-size: 16px;
+                }
+
+                .ui-dialog-titlebar-close {
+  visibility: hidden;
+}                 
+                      </style>
+                            <script>
+                         $(function() {
+                            $( "#dialog-1" ).dialog({
+                               autoOpen: false,
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener" ).click(function() {
+                               $( "#dialog-1" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-2" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+
+                            $( "#opener-1" ).click(function() {
+                               $( "#dialog-2" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-3" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-2" ).click(function() {
+                               $( "#dialog-3" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-7" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-6" ).click(function() {
+                               $( "#dialog-7" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-4" ).dialog({
+                               autoOpen: false,   buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-3" ).click(function() {
+                               $( "#dialog-4" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-5" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-4" ).click(function() {
+                               $( "#dialog-5" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-6" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-5" ).click(function() {
+                               $( "#dialog-6" ).dialog( "open" );
+                            });
+                         });
+
+                         $(function() {
+                            $( "#dialog-8" ).dialog({
+                               autoOpen: false,  
+                               buttons: {
+                  Close: function() {
+                     $( this ).dialog( "close" );
+                  }
+               },  
+                                 hide: "puff",
+                               show : "slide",
+                               height: 225,
+                               width: 275
+                            });
+                            $( "#opener-7" ).click(function() {
+                               $( "#dialog-8" ).dialog( "open" );
+                            });
+                         });
+                
+                
+                  </script>
+    </head>
+           <body style="background-color:wheat">           
+            <h1 style="font-family: Cursive; font-size: 70px; color:rgb(139,0,0)">Solar System</h1>                
+           <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Planets2013.svg" alt="Solar System image" height= "250px" width="700px">
+                <p>The solar system consists of the sun and everything that orbits the sun. This includes the eight planets and their moons, the dwarf planets, asteroids, comets and other small objects.
+                </p>
+
+                <p> All the planets and dwarf planets, the rocky asteroids, and the icy bodies in the Kuiper belt move around the Sun in elliptical orbits in the same direction that the Sun rotates. This motion is termed prograde, or direct, motion.
+                </p>
+                <p><strong><u> Planets in the solar system: </u></strong> </p>
+                <table>
+                    <tr style="background-color:yellow">
+                        <th>No. </th>
+                        <th>Planet Name </th>
+                        <th>Distance from Sun </th>
+                    </tr>
+                    <tr>
+                        <td>1 </td> <td>Mercury</td> <td><button id = "opener">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>2 </td> <td>Venus</td> <td><button id = "opener-1">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>3 </td> <td>Earth</td> <td><button id = "opener-2">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>4 </td> <td>Mars</td> <td><button id = "opener-3">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>5 </td> <td>Jupiter</td> <td><button id = "opener-4">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>6 </td> <td>Saturn</td> <td><button id = "opener-5">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>7 </td> <td>Uranus</td> <td><button id = "opener-6">Distance From Sun</button></td> 
+                    </tr>
+                    <tr>
+                        <td>8</td> <td>Neptune</td> <td><button id = "opener-7">Distance From Sun</button></td> 
+                    </tr>
+               </table>
+               <div id = "dialog-1" title = "Mercury">
+                Mercury is 57.91 million kilo
+                meters away from the sun
+               </div>
+               <div id = "dialog-2" title = "Venus">
+                Venus is 108.2 million kilo
+                meters away from the sun
+               </div>
+               <div id = "dialog-3" title = "Earth">
+                Earth is 149.6 million kilo
+                meters away from the sun
+               </div>
+               <div id = "dialog-4" title = "Mars">
+                Mars is 227.9 million kilo
+                meters away from the sun
+              </div>
+              <div id = dialog-5 title = "Jupiter">
+                Jupiter is 778.5 million kilo
+                meters away from the sun
+            </div>
+            <div id = "dialog-6" title = "Saturn">
+              Saturn is 1.434 billion kilo
+              meters away from the sun
+          </div>
+          <div id = "dialog-7" title = "Uranus">
+            Uranus is 2.871 billion kilo
+            meters away from the sun
+        </div>
+        <div id = "dialog-8" title = "Neptune">
+          Neptune is 4.495 billion kilo
+          meters away from the sun
+      </div>
+            </body>
+        </html>
